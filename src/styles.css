@@ -1,0 +1,24 @@
+@import '@fontsource/silkscreen/700.css';
+
+html, body {
+  margin: 0; padding: 0; height: 100%; width: 100%;
+  background: #080405; overflow: hidden;
+  touch-action: none; overscroll-behavior: none;
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Silkscreen', monospace; font-weight: 700;
+}
+body {
+  background:
+    radial-gradient(ellipse at 50% 110%, rgba(229, 35, 29, 0.35), transparent 60%),
+    radial-gradient(ellipse at 50% -10%, rgba(255, 140, 20, 0.12), transparent 55%),
+    #080405;
+}
+#game { position: fixed; inset: 0; }
+#game canvas { display: block; image-rendering: auto; }
+#rotate-hint {
+  display: none; position: fixed; left: 0; right: 0; top: 0; z-index: 10;
+  padding: 8px; text-align: center; font-size: 9px; color: #ffd37a;
+  background: rgba(10, 4, 5, 0.9); pointer-events: none;
+}
+@media (orientation: landscape) and (max-height: 520px) { #rotate-hint { display: block; } }

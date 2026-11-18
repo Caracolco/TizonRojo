@@ -1,0 +1,23 @@
+{
+  "name": "tizon-rojo-arcade",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tizón Rojo Arcade — demo visual jugable V1",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@fontsource/silkscreen": "^5.3.0",
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}
